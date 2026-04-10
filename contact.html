@@ -1,0 +1,261 @@
+
+
+<!DOCTYPE html>
+<html>
+<head><title>Contact Page</title>
+	  <link href="newlogo.png" rel="icon" name="pms-icon">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+	  <meta name="viewport" content="width=device-width, initial-scale=1.0, height=device-height, minimum-scale=1.0, maximum-scale=1.0">
+<style>
+  *{
+    margin:0;
+    padding:0;
+  }
+ html, body{
+ 
+   width:100%;
+  height:100%;
+  overflow-x:hidden;
+   font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+ }
+.container{
+display:flex;
+flex-direction:row;
+align-items:center;
+
+justify-content:space-between;
+;
+width:100%;
+padding:10px;
+background-color:#22487a;
+
+}
+.links a{
+  color:white;
+  padding:5px;
+  font-size:18px;
+  text-decoration:none;
+}
+.container .links{
+  display:flex;
+  flex-direction:row;
+  margin-right:20px;
+  justify-content:space-between;
+}
+.container h1{
+  color: #92a6fdff;
+}
+.contents{
+  margin-top:60px;
+  margin-left:10px;
+}
+
+.footer{
+  background-color:#22487a;
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  align-items:center;
+  padding:20px;
+  margin-top:10%;
+  
+  
+}
+.footer span{
+  color:white;
+}
+.footer p{
+  padding:10px;
+  color:white;
+}
+.footer h3  {
+  color:white
+}
+
+
+     
+            .navigation{
+      display:none;
+     }
+      .navmodel{
+      display:none;
+     }
+       @media (max-width:480px){
+          .container .navmodel{
+      display:flex;
+     }
+       .container   .navigation{
+   display:none;
+   background-color:rgb(0,0,0,0.5);
+   position:fixed;
+   inset:0;
+   justify-content:center;
+  
+  }
+  .container .nav-container{
+  display:flex;
+  justify-content:center;
+  padding-top:10%;
+  flex-direction:column;
+ color:black;
+ font-weight:bolder;
+ background-color:white;
+ height:30%;
+ padding:10px;
+ width:70%;
+ margin-top:50%;
+ 
+
+ 
+}
+.container .nav-container a{
+  color:black;
+  font-size:18px;
+  text-decoration:none;
+  padding:10px;
+}
+.container .links{
+  display:none;
+}
+
+   button{
+    border:1px solid  orangered;
+    padding:5px 10px;
+    border-radius:40px;
+    background-color:orangered;
+    color:white;
+    cursor:pointer;
+    margin-top:10px;
+  }
+       }
+              .newToKnow{
+        margin-top:5%;
+        text-align:center;
+       
+       }
+       .newToKnow h2{
+        text-align:center;
+        margin-bottom:30px;
+       }
+       .sub-divs{
+ display:grid;
+        grid-template-columns:repeat(2,1fr);
+        gap:10px;
+        margin-left:3%;
+        margin-right:3%;
+        margin-bottom:100px;
+       }
+       .sub-divs .sub-div{
+        padding:20px;
+        border:1px solid #ccc;
+        border-radius:10px;
+        font-size:17px;
+       }
+       @media (max-width:480px){
+           .sub-divs{
+ display:grid;
+        grid-template-columns:repeat(1,1fr);
+        gap:10px;
+        margin-left:3%;
+        margin-right:3%;
+        margin-bottom:100px;
+       }
+          .newToKnow{
+        margin-top:10%;
+        text-align:center;
+       
+       }
+        .newToKnow h2{
+        text-align:center;
+        margin-bottom:30px;
+        font-size:19px;
+       }
+       }
+       
+       @media (max-width:780px){
+             .newToKnow{
+        margin-top:12%;
+        text-align:center;
+       
+       }
+              .newToKnow h2{
+        text-align:center;
+        margin-bottom:30px;
+        font-size:20px;
+       }
+}
+
+  </style>
+  </head>
+
+<body>
+<div class="container">
+<h1>PMS</h1>
+<div class="navmodel">
+  <button style="background-color:white;border-radius:3px;color:black;padding:7px;cursor:pointer;border:1px solid white;font-size:18px;margin-right:20px;" onclick="viewNavs()">Menu</button>
+  </div>
+  <div class="navigation" id="navbar">
+  <div class="nav-container">
+ <a href="index.html" > <i class="fa fa-home"></i>Home</a>
+<a href="about.html"><i class="fa-solid fa-circle-info"></i>About us</a>
+<a href="contact.html" style="background-color:indigo;color:white;"><i class="fa fa-phone"></i>Contact us</a>
+<a href="contact.html" style="color:red;">Close</a>
+</div>
+</div>
+<span class="links">
+<a href="index.html"><i class="fa fa-home"></i>Home</a>
+</i><a href="about.html" ><i class="fa fa-user"></i>About us</a>
+<a href="contact.html"  style="background-color:indigo;"><i class="fa fa-phone"></i>Contact us</a>
+
+
+</span>
+
+
+</div>
+
+
+  <script>
+ 
+      function viewNavs(){
+      document.getElementById('navbar').style.display='flex';
+    }
+    </script>
+  
+     <div class="newToKnow">
+      <h2 style="color:#22487a;">Contact us Information</h2>
+      <div class="sub-divs">
+       
+      <div class="sub-div">
+        <h4>Contact info</h4>
+         <p><b style="color:#22487a">Phone Number:</b>0783395496
+         </p>
+          <p><b style="color:#22487a">Instagram:</b>sam125817
+         </p>
+          <p><b style="color:#22487a">Facebook:</b>samuel Iradukunda
+         </p>
+          <p><b style="color:#22487a">Twitter:</b>@iradukunda
+         </p>
+         <p><b style="color:#22487a">Email:</b>iradukunda814@gmail.com
+         </p>
+       
+</div>
+      <div class="sub-div">
+        <h4>Info in details</h4>
+        <p>You can visit us on different website like instagram,facebook,Twitter and others to see how we work in full details and follow us for every
+          day life by using diffent social media
+         </p>
+</div>
+</div>
+<div class="footer">
+  <h3>follow us on</h3>
+  <p><i class="fa-brands fa-facebook"></i><a href="https://facebook.com" style="color:white;text-decoration:none;">Facebook</a></p>
+  <span class="copyright">&copy;Iradukunda samuel 2026</span>
+</div>
+</div>
+
+
+
+
+</body>
+</html>
+	
